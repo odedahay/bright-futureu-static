@@ -331,6 +331,7 @@ body.video-modal-open { overflow: hidden; }
 .accordion { display: grid; gap: 16px; }
 .accordion button { width: 100%; min-height: 51px; text-align: left; border: 1px solid var(--line); border-radius: 16px; background: #fff; color: var(--ink); font: 400 1.25rem/1.3 "Nunito", Arial, sans-serif; padding: 12px 24px; cursor: pointer; display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; }
 .accordion button i { color: var(--primary); font-size: 1.5rem; line-height: 1; transition: transform .2s ease; }
+.accordion button.is-open .accordion-question { color: var(--primary); }
 .accordion button.is-open i { transform: rotate(180deg); }
 .accordion-answer { display: none; grid-column: 1 / -1; margin-top: 1px; padding-top: 12px; border-top: 1px solid rgba(0,0,0,.15); font-size: 1rem; color: var(--muted); }
 .accordion button.is-open .accordion-answer { display: block; }
