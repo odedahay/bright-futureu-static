@@ -2,6 +2,10 @@ const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const mainNav = document.querySelector(".main-nav");
 
+document.querySelectorAll("[data-current-year]").forEach((year) => {
+  year.textContent = new Date().getFullYear();
+});
+
 const updateNavScrollState = () => {
   mainNav?.classList.toggle("is-scrolled", window.scrollY > 8);
 };
