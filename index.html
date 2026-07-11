@@ -54,16 +54,20 @@
     </header>
 
     <main>
-      <section class="trust-strip" aria-label="Program highlights">
-        <div class="trust-item">
+      <section class="section-brand" aria-label="Program highlights">
+        <div class="brand-item">
           <span><img src="assets/icon-care.svg" alt="" /></span>
-          <p>Licensed Child Care</p>
+          <p>Licensed Alberta Child Care</p>
         </div>
-        <div class="trust-item">
+        <div class="brand-item">
+          <span><img src="assets/icon-care.svg" alt="" /></span>
+          <p>Full-day Program</p>
+        </div>
+        <div class="brand-item">
           <span><img src="assets/icon-ratio.svg" alt="" /></span>
           <p>Low Teacher-to-Child Ratio</p>
         </div>
-        <div class="trust-item">
+        <div class="brand-item">
           <span><img src="assets/icon-playground.svg" alt="" /></span>
           <p>Flexible Full &amp; Part-Time Programs</p>
         </div>
@@ -96,7 +100,14 @@
           </div>
           <div class="video-thumb">
             <img src="assets/video.jpg" alt="Teacher working with children at a classroom table" />
-            <button type="button" aria-label="Play virtual tour"><span></span></button>
+            <button
+              class="video-play"
+              type="button"
+              aria-label="Play virtual tour video"
+              data-video-url="https://www.youtube.com/embed/qvI9dQvm3SU?si=iwsRa55Yt_b7j004"
+            >
+              <span></span>
+            </button>
           </div>
         </div>
       </section>
@@ -162,9 +173,13 @@
             <p>Hear from families who have experienced the LittleMinds difference.</p>
           </div>
           <div class="testimonial-grid">
-            <article class="testimonial"><div class="stars">*****</div><p>"My daughter has grown so much in confidence! The teachers are patient and nurturing."</p><footer><img src="assets/sarah.jpg" alt="" /><span><strong>Sarah Johnson</strong>Parent</span></footer></article>
+            <!-- Elfsight Google Reviews | BFU Google Reviews -->
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-52872b35-2120-4747-91c0-fca02c038962" data-elfsight-app-lazy></div>
+
+            <!-- <article class="testimonial"><div class="stars">*****</div><p>"My daughter has grown so much in confidence! The teachers are patient and nurturing."</p><footer><img src="assets/sarah.jpg" alt="" /><span><strong>Sarah Johnson</strong>Parent</span></footer></article>
             <article class="testimonial"><div class="stars">*****</div><p>"Outstanding program. My son looks forward to every day and talks about his activities."</p><footer><img src="assets/michael.jpg" alt="" /><span><strong>Michael Chen</strong>Parent</span></footer></article>
-            <article class="testimonial"><div class="stars">*****</div><p>"The best investment we made in our child's education. The care team is wonderful."</p><footer><img src="assets/emily.jpg" alt="" /><span><strong>Emily Davis</strong>Parent</span></footer></article>
+            <article class="testimonial"><div class="stars">*****</div><p>"The best investment we made in our child's education. The care team is wonderful."</p><footer><img src="assets/emily.jpg" alt="" /><span><strong>Emily Davis</strong>Parent</span></footer></article> -->
           </div>
         </div>
       </section>
@@ -225,6 +240,16 @@
         </div>
       </section>
     </main>
+
+    <div class="video-modal" id="video-modal" aria-hidden="true">
+      <div class="video-modal-backdrop" data-video-close></div>
+      <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-label="Bright Future U virtual tour video">
+        <button class="video-modal-close" type="button" aria-label="Close video" data-video-close>
+          <i class="ri-close-line" aria-hidden="true"></i>
+        </button>
+        <div class="video-modal-frame" data-video-frame></div>
+      </div>
+    </div>
 
     <footer class="site-footer" id="contact">
       <div class="container footer-grid">
