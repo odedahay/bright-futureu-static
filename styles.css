@@ -1135,6 +1135,10 @@ section.program-hero {
   background: rgba(2, 164, 160, 0.15);
 }
 
+.program-icon-bubble.kindergarten-bubble {
+  background: rgba(255, 187, 5, 0.15);
+}
+
 .program-icon-bubble i {
   font-size: 1.75rem;
   line-height: 1;
@@ -1172,6 +1176,10 @@ section.program-hero {
 
 .program-page-preschool .program-hero h1 span {
   color: #02A4A0;
+}
+
+.program-page-kindergarten .program-hero h1 span {
+  color: #FFBB05;
 }
 
 .program-hero-copy p {
