@@ -1130,6 +1130,11 @@ section.program-hero {
   background: rgba(75, 71, 223, 0.15);
   color: var(--primary);
 }
+
+.program-icon-bubble.preschool-bubble {
+  background: rgba(2, 164, 160, 0.15);
+}
+
 .program-icon-bubble i {
   font-size: 1.75rem;
   line-height: 1;
@@ -1164,6 +1169,11 @@ section.program-hero {
 .program-page-toddler .program-hero h1 span {
   color: #ff5500;
 }
+
+.program-page-preschool .program-hero h1 span {
+  color: #02A4A0;
+}
+
 .program-hero-copy p {
   max-width: 348px;
   position: relative;
