@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Bright Future U</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Nunito:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor/remixicon/remixicon.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Bright Future U home">
+        <img src="assets/logo.png" alt="Bright Future U" />
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <div class="nav-links" id="primary-menu">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-trigger" href="index.html#programs" aria-haspopup="true" aria-expanded="false">Programs <i class="ri-arrow-drop-down-line" aria-hidden="true"></i></a>
+          <div class="nav-dropdown-menu" aria-label="Programs submenu">
+            <a href="program-infant.html">Infant</a>
+            <a href="program-toddler.html">Toddler</a>
+            <a href="program-preschool.html">Preschool</a>
+            <a href="program-kindergarten.html">Kindergarten</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown-trigger" href="" aria-haspopup="true" aria-expanded="false">Explore <i class="ri-arrow-drop-down-line" aria-hidden="true"></i></a>
+          <div class="nav-dropdown-menu" aria-label="Explore submenu">
+            <a href="index.html#blog">Blogs</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#tour">Virtual Tour</a>
+          </div>
+        </div>
+        <a class="button button-small" href="book-a-tour.html">Book a Tour</a>
+      </div>
+    </nav>
+
+    <main class="contact-page">
+      <section class="contact-hero" aria-labelledby="contact-title">
+        <div class="container contact-hero-grid">
+          <div class="contact-hero-copy">
+            <h1 id="contact-title">Let's Connect</h1>
+            <p>
+              Have questions about our programs, enrollment, or childcare services? Our team is happy to help. Get in
+              touch with Bright Future U Early Learning Academy, and we'll respond as soon as possible.
+            </p>
+            <a class="button" href="book-a-tour.html">
+              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+              Book a Tour
+              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="contact-hero-media" aria-hidden="true">
+            <img src="assets/contact-hero.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-main" aria-labelledby="contact-form-title">
+        <div class="container contact-card">
+          <div class="contact-form-area">
+            <header class="contact-form-header">
+              <h2 id="contact-form-title">We'd Love to Hear From You</h2>
+              <p>
+                Whether you're looking for more information about our programs, have questions about enrollment, or
+                simply want to learn more about Bright Future U, send us a message and our team will be happy to assist
+                you.
+              </p>
+            </header>
+
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-field">
+                <label for="contact-name">Parent/Guardian Name</label>
+                <input id="contact-name" name="contact-name" type="text" placeholder="Your full name" autocomplete="name" />
+              </div>
+              <div class="contact-field">
+                <label for="contact-email">Email Address <span aria-hidden="true">*</span></label>
+                <input id="contact-email" name="contact-email" type="email" placeholder="your@email.com" autocomplete="email" required />
+              </div>
+              <div class="contact-field">
+                <label for="contact-phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input id="contact-phone" name="contact-phone" type="tel" placeholder="(000) 000-0000" autocomplete="tel" required />
+              </div>
+              <div class="contact-field">
+                <label for="contact-subject">Subject or Reason for Contact <span aria-hidden="true">*</span></label>
+                <select id="contact-subject" name="contact-subject" required>
+                  <option value="">Please select</option>
+                  <option>Enrollment</option>
+                  <option>Programs</option>
+                  <option>Book a Tour</option>
+                  <option>General Question</option>
+                </select>
+              </div>
+              <div class="contact-field contact-field-wide">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="contact-message"></textarea>
+              </div>
+              <div class="contact-submit contact-field-wide">
+                <button class="button" type="submit">
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                  Schedule My Tour
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </button>
+                <p>We'll get back to you as soon as possible during our regular business hours.</p>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-info-panel" aria-labelledby="contact-info-title">
+            <h2 id="contact-info-title">Get in Touch</h2>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="contact-info-icon"><i class="ri-map-pin-line" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Visit Us</h3>
+                  <p>505 4 Ave SW<br />Calgary, AB T2P 0J8</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-icon contact-info-orange"><i class="ri-phone-line" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Call Us</h3>
+                  <a href="tel:8254384482">(825) 438-4482</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-icon contact-info-teal"><i class="ri-mail-line" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Email Us</h3>
+                  <a href="mailto:hello@brightfutureu.com">hello@brightfutureu.com</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-icon contact-info-yellow"><i class="ri-time-line" aria-hidden="true"></i></span>
+                <div>
+                  <h3>Hours of Operation</h3>
+                  <p>Monday - Friday<br />06:30 AM - 06:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="contact-location" aria-labelledby="location-title">
+        <div class="container contact-location-card">
+          <div class="contact-location-copy">
+            <h2 id="location-title">Find Bright Future U</h2>
+            <p>
+              Conveniently located in downtown Calgary, Bright Future U Early Learning Academy provides a welcoming and
+              accessible environment for children and families.
+            </p>
+            <a class="button button-outline" href="https://maps.google.com/?q=505+4th+Ave+SW,+Calgary,+AB+T2P+0J8" target="_blank" rel="noreferrer">
+              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+              Get Directions
+              <i class="ri-arrow-right-line" aria-hidden="true"></i>
+            </a>
+          </div>
+          <img class="contact-map" src="assets/contact-map.jpg" alt="Map showing Bright Future U location in downtown Calgary" />
+        </div>
+      </section>
+
+      <section class="contact-tour-cta" aria-labelledby="tour-cta-title">
+        <div class="container contact-tour-card">
+          <div class="contact-tour-top">
+            <div>
+              <h2 id="tour-cta-title">Ready to Visit Bright Future U?</h2>
+              <p>Schedule a Tour Today</p>
+            </div>
+            <div class="contact-tour-actions">
+              <a class="button" href="book-a-tour.html"><i class="ri-arrow-right-line" aria-hidden="true"></i> Book a Tour <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+              <a class="button button-outline" href="tel:8254384482"><i class="ri-arrow-right-line" aria-hidden="true"></i> Call Us <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <ul class="contact-tour-checks">
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i>No obligation</li>
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i>Meet our Teachers</li>
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i>Ask Questions</li>
+            <li><i class="ri-checkbox-circle-fill" aria-hidden="true"></i>See our classrooms</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo.png" alt="Bright Future U" />
+          <p>Empowering young minds to grow with confidence through purposeful play and meaningful exploration.</p>
+          <h3>Connect</h3>
+          <div class="socials"><a href="https://www.facebook.com/profile.php?id=61569810943887" target="_blank"><i class="ri-facebook-circle-fill social-icon"></i></a><a href="https://www.instagram.com/brightfutureucalgary" target="_blank"><i class="ri-instagram-fill social-icon"></i></a></div>
+        </div>
+        <div><h3>Quick Links</h3><a href="about-us.html">About Us</a><a href="index.html#programs">Programs</a><a href="index.html#blog">Blogs</a><a href="book-a-tour.html">Book a Tour</a><a href="index.html#tour">Virtual Tour</a><a href="contact.html">Contact Us</a></div>
+        <div><h3>Programs</h3><a href="program-infant.html">Infant</a><a href="program-toddler.html">Toddler</a><a href="program-preschool.html">Preschool</a><a href="program-kindergarten.html">Kindergarten</a></div>
+        <div><h3>Connect</h3><a href="tel:8254384482"><i class="ri-smartphone-line"></i> (825) 438-4482</a><a href="mailto:hello@brightfutureu.com"><i class="ri-mail-line"></i> hello@brightfutureu.com</a><p><i class="ri-map-pin-line"></i> 505 4th Ave SW, Calgary, AB T2P 0J8, Canada</p><p><i class="ri-calendar-line"></i> Monday - Friday<br /><i class="ri-time-line"></i> 06:30 a.m. - 06:00 p.m.</p></div>
+        <div><h3>Award</h3><p>Consumer Choice Award 2026</p><img class="footer-award" src="assets/award.png" alt="" /></div>
+      </div>
+      <div class="copyright">&copy; <span data-current-year></span> Bright Future U. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

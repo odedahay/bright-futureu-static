@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Tour | Bright Future U</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Nunito:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="vendor/remixicon/remixicon.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="main-nav" aria-label="Primary navigation">
+    <a class="logo" href="index.html" aria-label="Bright Future U home">
+      <img src="assets/logo.png" alt="Bright Future U" />
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <div class="nav-links" id="primary-menu">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About Us</a>
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-trigger" href="index.html#programs" aria-haspopup="true" aria-expanded="false">Programs
+          <i class="ri-arrow-drop-down-line" aria-hidden="true"></i></a>
+        <div class="nav-dropdown-menu" aria-label="Programs submenu">
+          <a href="program-infant.html">Infant</a>
+          <a href="program-toddler.html">Toddler</a>
+          <a href="program-preschool.html">Preschool</a>
+          <a href="program-kindergarten.html">Kindergarten</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-dropdown-trigger" href="" aria-haspopup="true" aria-expanded="false">Explore <i
+            class="ri-arrow-drop-down-line" aria-hidden="true"></i></a>
+        <div class="nav-dropdown-menu" aria-label="Explore submenu">
+          <a href="program-infant.html">Blogs</a>
+          <a href="program-toddler.html">Events</a>
+          <a href="#programs">Virtual Tour</a>
+        </div>
+      </div>
+      <a class="button button-small" href="book-a-tour.html">Book a Tour</a>
+    </div>
+  </nav>
+
+  <main class="book-tour-page">
+    <section class="book-tour-hero" data-node-id="385:1484" data-name="Header">
+      <div class="container book-tour-page-grid">
+        <div class="book-tour-page-copy">
+          <h1>Book a Tour</h1>
+          <p>Come explore our classrooms, meet our educators, and discover how Bright Future U can support your child's
+            learning and development.</p>
+          <div class="book-tour-highlights" aria-label="Tour highlights">
+            <div>
+              <span class="book-tour-highlight-icon"><i class="ri-school-line" aria-hidden="true"></i></span>
+              <p>Tour our centre</p>
+            </div>
+            <div>
+              <span class="book-tour-highlight-icon book-tour-highlight-orange"><i class="ri-parent-line"
+                  aria-hidden="true"></i></span>
+              <p>Meet our educators</p>
+            </div>
+            <div>
+              <span class="book-tour-highlight-icon book-tour-highlight-teal"><i class="ri-question-answer-line"
+                  aria-hidden="true"></i></span>
+              <p>Ask questions</p>
+            </div>
+            <div>
+              <span class="book-tour-highlight-icon book-tour-highlight-yellow"><i class="ri-book-open-line"
+                  aria-hidden="true"></i></span>
+              <p>Explore our programs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-hero-media" aria-hidden="true">
+          <picture>
+            <source media="(max-width: 700px)" srcset="assets/book-tour-hero-m.jpg" />
+            <img src="assets/book-tour-hero-d.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="book-tour-section" id="schedule" aria-labelledby="schedule-title">
+      <div class="container">
+        <div class="book-tour-card">
+          <div class="book-tour-form-area">
+            <header class="book-tour-form-header">
+              <h2 id="schedule-title">Schedule Your Visit</h2>
+              <p>Tell us a little about your family and preferred tour date. Our team will contact you to confirm your
+                visit.</p>
+            </header>
+
+            <form class="book-tour-form" action="#" method="post">
+              <div class="book-tour-field">
+                <label for="guardian-name">Parent/Guardian Name</label>
+                <input id="guardian-name" name="guardian-name" type="text" placeholder="Your full name"
+                  autocomplete="name" />
+              </div>
+              <div class="book-tour-field">
+                <label for="guardian-email">Email Address <span aria-hidden="true">*</span></label>
+                <input id="guardian-email" name="guardian-email" type="email" placeholder="your@email.com"
+                  autocomplete="email" required />
+              </div>
+              <div class="book-tour-field">
+                <label for="guardian-phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input id="guardian-phone" name="guardian-phone" type="tel" placeholder="(000) 000-0000"
+                  autocomplete="tel" required />
+              </div>
+              <div class="book-tour-field">
+                <label for="child-name">Child's Full Name <span aria-hidden="true">*</span></label>
+                <input id="child-name" name="child-name" type="text" placeholder="Child's full name" required />
+              </div>
+              <div class="book-tour-field">
+                <label for="child-birthday">Child's Date of Birth <span aria-hidden="true">*</span></label>
+                <input id="child-birthday" name="child-birthday" type="date" required />
+              </div>
+              <div class="book-tour-field">
+                <label for="program-interest">Program of Interest <span aria-hidden="true">*</span></label>
+                <select id="program-interest" name="program-interest" required>
+                  <option value="">Select a Program</option>
+                  <option>Infant</option>
+                  <option>Toddler</option>
+                  <option>Preschool</option>
+                  <option>Kindergarten</option>
+                </select>
+              </div>
+              <div class="book-tour-field">
+                <label for="tour-date">Preferred Tour Date</label>
+                <input id="tour-date" name="tour-date" type="date" />
+              </div>
+              <div class="book-tour-field">
+                <label for="tour-time">Preferred Tour Time <span aria-hidden="true">*</span></label>
+                <select id="tour-time" name="tour-time" required>
+                  <option value="">HH:MM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                  <option>01:00 PM</option>
+                  <option>02:00 PM</option>
+                  <option>03:00 PM</option>
+                </select>
+              </div>
+              <div class="book-tour-field book-tour-field-wide">
+                <label for="special-requirements">Special Needs or Requirements</label>
+                <textarea id="special-requirements" name="special-requirements"></textarea>
+              </div>
+              <div class="book-tour-field book-tour-field-wide">
+                <label for="medical-conditions">Allergies or Medical Conditions</label>
+                <textarea id="medical-conditions" name="medical-conditions"></textarea>
+              </div>
+              <div class="book-tour-field">
+                <label for="referral-source">How Did You Hear About Us? <span aria-hidden="true">*</span></label>
+                <select id="referral-source" name="referral-source" required>
+                  <option value="">Select an option</option>
+                  <option>Google Search</option>
+                  <option>Social Media</option>
+                  <option>Family or Friend</option>
+                  <option>Community Event</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <label class="book-tour-checkbox book-tour-field-wide" for="email-updates">
+                <input id="email-updates" name="email-updates" type="checkbox" />
+                <span>Sign up for our email list for updates, promotions, and more.</span>
+              </label>
+              <div class="book-tour-submit book-tour-field-wide">
+                <button class="button" type="submit">
+                  Schedule My Tour
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </button>
+                <p>
+                  This site is protected by reCAPTCHA and the Google
+                  <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>
+                  and
+                  <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a>
+                  apply.
+                </p>
+              </div>
+            </form>
+
+            <div class="book-tour-data-clause">
+              <h3>Data Collection Clause</h3>
+              <p>
+                By submitting this registration form, you consent to Bright Future Early Learning Academy collecting
+                and storing personal information provided, including your child's details, contact information, medical
+                history, and emergency contacts. This information will be used solely for the purpose of enrolment,
+                communication, and providing appropriate care and services. We respect your privacy and ensure that all
+                data will be kept confidential in accordance with our privacy policy and applicable data protection
+                laws.
+              </p>
+            </div>
+          </div>
+
+          <aside class="book-tour-sidebar" aria-labelledby="expect-title">
+            <h2 id="expect-title">What to Expect During Your Tour</h2>
+            <ul class="book-tour-expect-list">
+              <li>
+                <span class="book-tour-sidebar-icon"><i class="ri-school-line" aria-hidden="true"></i></span>
+                <p>Explore our classrooms and learning spaces</p>
+              </li>
+              <li>
+                <span class="book-tour-sidebar-icon book-tour-sidebar-orange"><i class="ri-team-line"
+                    aria-hidden="true"></i></span>
+                <p>Meet our caring educators</p>
+              </li>
+              <li>
+                <span class="book-tour-sidebar-icon book-tour-sidebar-teal"><i class="ri-user-settings-line"
+                    aria-hidden="true"></i></span>
+                <p>Learn about our programs and daily routines</p>
+              </li>
+              <li>
+                <span class="book-tour-sidebar-icon book-tour-sidebar-yellow"><i class="ri-gamepad-line"
+                    aria-hidden="true"></i></span>
+                <p>Ask questions about enrollment and availability</p>
+              </li>
+            </ul>
+            <div class="book-tour-sidebar-contact">
+              <h3>Have questions?</h3>
+                <a href="tel:8254384482">
+                  <i class="ri-smartphone-line" aria-hidden="true"></i> 
+                  (825) 438-4482</a>
+                <a href="mailto:hello@brightfutureu.com">
+                  <i class="ri-mail-line" aria-hidden="true"></i>
+                  hello@brightfutureu.com
+                </a>
+            </div>
+            <div class="book-tour-sun" aria-hidden="true">
+              <img src="assets/sunrise.png" />
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/logo.png" alt="Bright Future U" />
+        <p>Empowering young minds to grow with confidence through purposeful play and meaningful exploration.</p>
+        <h3>Connect</h3>
+        <div class="socials"><a href="https://www.facebook.com/profile.php?id=61569810943887" target="_blank"><i
+              class="ri-facebook-circle-fill social-icon"></i></a><a
+            href="https://www.instagram.com/brightfutureucalgary" target="_blank"><i
+              class="ri-instagram-fill social-icon"></i></a></div>
+      </div>
+      <div>
+        <h3>Quick Links</h3><a href="about-us.html">About Us</a><a href="index.html#programs">Programs</a><a
+          href="index.html#blog">Blogs</a><a href="index.html#tour">Book a Tour</a><a href="index.html#tour">Virtual
+          Tour</a><a href="#contact">Contact Us</a>
+      </div>
+      <div>
+        <h3>Programs</h3><a href="program-infant.html">Infant</a><a href="program-toddler.html">Toddler</a><a
+          href="index.html#programs">Preschool</a><a href="index.html#programs">Kindergarten</a>
+      </div>
+      <div>
+        <h3>Connect</h3><a href="tel:8254384482"><i class="ri-smartphone-line"></i> (825) 438-4482</a><a
+          href="mailto:hello@brightfutureu.com"><i class="ri-mail-line"></i> hello@brightfutureu.com</a>
+        <p><i class="ri-map-pin-line"></i> 505 4th Ave SW, Calgary, AB T2P 0J8, Canada</p>
+        <p><i class="ri-calendar-line"></i> Monday - Friday<br /><i class="ri-time-line"></i> 06:30 a.m. - 06:00 p.m.
+        </p>
+      </div>
+      <div>
+        <h3>Award</h3>
+        <p>Consumer Choice Award 2026</p><img class="footer-award" src="assets/award.png" alt="" />
+      </div>
+    </div>
+    <div class="copyright">&copy; <span data-current-year></span> Bright Future U. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
