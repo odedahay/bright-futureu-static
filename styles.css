@@ -889,7 +889,7 @@ body.video-modal-open {
 }
 .site-footer h3 {
   color: var(--primary);
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin: 20px 0 16px;
 }
 .site-footer a,
